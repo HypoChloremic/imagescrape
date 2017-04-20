@@ -35,7 +35,7 @@ class ImageScrape:
 		
 		self.the_arguments.add_argument("-s", "--search",  help="The search-term", nargs=1)
 		self.the_arguments.add_argument("-d", "--destination", help="Specify destination folder, enclosing in quotes",  nargs=1)
-		self.the_arguments.add_argument("-l","--limit", help="The amount of images", nargs=1)
+		self.the_arguments.add_argument("-l","--limit", help="The number of images", nargs=1)
 
 		
 	# Storing the parsed arguments
