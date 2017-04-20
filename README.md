@@ -6,4 +6,4 @@ An argparse script that creates a folder at designated location, saving images s
 
 Windows:
 
-In CMD: python imagescrape.py --search [Search term] --limit [number of images] --destination [folder destination]
+In cmd: python imagescrape.py --search [Search term] --limit [number of images] --destination [folder destination]
