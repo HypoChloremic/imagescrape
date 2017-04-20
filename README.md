@@ -5,4 +5,5 @@ To run
 
 
 Windows:
+
 In CMD: python imagescrape.py --search [Search term] --limit [number of images] --destination [folder destination]
