@@ -3,6 +3,7 @@
 # to designated folder.
 # Parse will accept the search term. 
 # (C) 2017 Ali Rassolie 
+# Tested in Python 3.5.2
 
 try:
 	from bs4 import BeautifulSoup as bs4
