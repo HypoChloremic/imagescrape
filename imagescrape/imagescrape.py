@@ -3,6 +3,7 @@
 # to designated folder.
 # Parse will accept the search term. 
 # (C) 2017 Ali Rassolie 
+
 try:
 	from bs4 import BeautifulSoup as bs4
 except Exception as e:
