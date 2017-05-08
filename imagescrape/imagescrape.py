@@ -71,22 +71,22 @@ class ImageScrape:
 			print("""\n\nAs the file-destination was not defined, we will use the current directory to save the images\n
 				***********************\n""")
 
-		new_dir = self.destination + "\\images\\" 
+		new_dir = self.destination + "\\images" 
 		if not os.path.exists(new_dir):
-			os.makedirs(new_dir)
+			os.makedirs("images")
 			print("Made a new directory at: {}\n".format(new_dir))
 		
 		self.limit = int(self.opts.limit[0])
 		imgs = self.soup.find_all("img", alt="Bildresultat för {}".format(self.search_term), limit=self.limit)
 		
-		pos = 0 
-		for i in imgs:
-			img_url = imgs[pos]["src"]
-			filename = "image{}.jpg".format(int(pos))
+		
+		for index, i in enumerate(imgs):
+			img_url = imgs[index]["src"]
+			filename = "image{}.jpg".format(int(index))
 			full_filename = os.path.join(new_dir, filename)
 			print("Saving to: {}\nImage url: {}\n".format(full_filename,  img_url,))
 			urlretrieve(img_url, full_filename)
-			pos += 1
+			
 
 if __name__ == '__main__':
 	session_1 = ImageScrape()
